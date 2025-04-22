@@ -44,7 +44,7 @@ export function TicketItem({ customer, ticket }: TicketItemProps){
             <td className="text-left pl-1">{customer?.name}</td>
             <td className="text-left hidden sm:table-cell">{ticket.created_at?.toLocaleDateString("pt-br")}</td>
             <td className="text-left">
-                <span className="bg-green-500 px-2 py-1 rounded">{ticket.status}</span>
+                <span className="bg-green-500 text-white font-medium px-2 py-1 rounded">{ticket.status}</span>
             </td>
             <td className="text-left">
                 <button className="mr-3 cursor-pointer" onClick={handleChangeStatus}>
